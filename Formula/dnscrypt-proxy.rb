@@ -1,15 +1,15 @@
 class DnscryptProxy < Formula
   desc "Secure communications between a client and a DNS resolver"
   homepage "https://github.com/jedisct1/dnscrypt-proxy"
-  url "https://github.com/jedisct1/dnscrypt-proxy/archive/2.0.20.tar.gz"
-  sha256 "85ba39a7a80f552751b34ee0289eb696b98dfbf208b884c57b60d9b25fba1f0c"
+  url "https://github.com/jedisct1/dnscrypt-proxy/archive/2.0.22.tar.gz"
+  sha256 "ac8ad326b6da47bb1e515d29a354511a8dc9a5ebfcf4be816b6791532d02d564"
   head "https://github.com/jedisct1/dnscrypt-proxy.git"
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d5f10b65c90f98bc5b724bb181112fc9499ceeb519d085f21cb0baa42362d9f7" => :mojave
-    sha256 "9ad7ee4ff7732a72b1f4b9a8eb454a3a5b97da83ce8bea90aed361398d6e7983" => :high_sierra
-    sha256 "162fcb7b552912cde757ec868039da1e0288bcf6f5ffa5af0af59b5eccbc6b39" => :sierra
+    sha256 "f82d05fd2ff6ce1d80b4a2511a832d3745dcde7b1287b2c11a6297df37d50c3a" => :mojave
+    sha256 "9921e47dd8ad7e69f9f8426a99e2af65c35e1822415a25af88ece16809a7effa" => :high_sierra
+    sha256 "9f5f908aa7638d5f614c834ace6180a7a1cdca138d00053acc801e5b88e1cf46" => :sierra
   end
 
   depends_on "go" => :build
